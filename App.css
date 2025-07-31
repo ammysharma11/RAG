@@ -1,0 +1,85 @@
+/* src/App.css */
+.App {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+  text-align: center;
+  color: #333;
+}
+
+.upload-section, .chat-section {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.upload-section input[type="file"] {
+  margin-right: 10px;
+}
+
+.upload-section button, .chat-input button {
+  padding: 8px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.upload-section button:disabled, .chat-input button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.status {
+  margin-top: 10px;
+  font-style: italic;
+  color: #555;
+}
+
+.chat-history {
+  height: 300px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  overflow-y: auto;
+  margin-bottom: 15px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.message {
+  margin-bottom: 8px;
+  padding: 5px 8px;
+  border-radius: 4px;
+}
+
+.message.user {
+  background-color: #e6f7ff;
+  text-align: right;
+}
+
+.message.ai {
+  background-color: #f0f0f0;
+  text-align: left;
+}
+
+.chat-input {
+  display: flex;
+}
+
+.chat-input input {
+  flex-grow: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
